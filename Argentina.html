@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal de Trelew</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dymYXx3QWRiBdx6sH30vku+6ja4ZK20DfCsGM4I8VCF2YQDPIELWe53HV+5AUFTgoLXMPvMiZFX+ybCj49d1Bw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #ffffff;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #34495e;
+      color: #ffffff;
+      padding: 15px;
+      margin-right: 10px;
+      box-sizing: border-box;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-radius: 4px;
+    }
+    nav a i {
+      margin-right: 8px;
+    }
+    nav a:hover {
+      background-color: #3f5b76;
+    }
+    .contenedor-principal {
+      display: flex;
+      padding: 0 10px;
+    }
+    nav {
+      width: 20%;
+    }
+    main {
+      width: 80%;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    .video-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .video-container iframe {
+      border-radius: 50%;
+      width: 200px;
+      height: 150px;
+      border: none;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #e74c3c;
+      color: #ffffff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    button:hover {
+      background-color: #c0392b;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    table th, table td {
+      padding: 8px;
+      border: 1px solid #dddddd;
+      text-align: left;
+    }
+    table th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <audio id="MusicaTipica" autoplay loop>
+    <source src="MusicaTipica.mp3" type="audio/mpeg">
+    Su navegador no soporta la reproducción de audio.
+  </audio>
+  <button onclick="document.getElementById('MusicaTipica').pause()">Detener música</button>
+  <button onclick="document.getElementById('MusicaTipica').play()">Continuar música</button>
+  <header>
+    <h1>Portal Web - Trelew, Argentina</h1>
+  </header>
+  <div class="contenedor-principal">
+    <nav>
+      <ul>
+        <li><a href="Argentina.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="historia.html"><i class="fas fa-book"></i> Historia</a></li>
+        <li><a href="turismo.html"><i class="fas fa-plane"></i> Turismo</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Bienvenidos a Trelew</h2>
+      <p>
+        Trelew, en la provincia de Chubut, Patagonia Argentina, nació a fines del siglo XIX gracias al 
+        ferrocarril Central del Chubut y a la llegada de los colonos galeses en 1865. 
+        Su nombre significa <b>“Pueblo de Luis”</b>, en honor a <b>Lewis Jones</b>, uno de sus fundadores.
+    </p>
+    <p>
+        Hoy es un centro cultural y económico importante, famoso por su Museo Paleontológico Egidio Feruglio, 
+        la gastronomía galesa y su cercanía a la Península Valdés, Patrimonio Natural de la Humanidad.
+    </p>
+      <img src="imagen01.jpg" alt="Imagen 1" width="200">
+      <img src="imagen02.jpg" alt="Imagen 2" width="200">
+      <h3>Videos</h3>
+      <p>A continuación hay tres espacios para videos de YouTube. Reemplace los IDs para mostrar sus propios videos.</p>
+      <div class="video-container">
+        <div>
+          <p>Video 1</p>
+          <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/mSLjtKY7yro?si=K41HmoowlJELr9au" 
+          title="YouTube video player" frameborder="0"
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        </div>
+        <div>
+          <p>Video 2</p>
+          <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/QkvH_JIyDkk?si=YD5Chm4t7vPnX0N3&amp;start=4" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div>
+          <p>Video 3</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/9xruaRXN7dY?si=OmYWxojJphKN6r0w" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <h3>Contenido de Climas Durante la semana (Puede variar)</h3>
+      <p>Esta informacion no esta completamente aegura asegurese de verificar la informacion</p>
+<section class="datos">
+    <h2>📊 Datos de clima durante la semana</h2>
+    <table>
+        <tr>
+            <th>Día</th>
+            <th>Temperatura</th>
+            <th>Estado</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Lunes</td>
+            <td>25°C</td>
+            <td>Soleado</td>
+            <td>Un día ideal para recorrer la ciudad y disfrutar de paseos al aire libre.</td>
+        </tr>
+        <tr>
+            <td>Martes</td>
+            <td>22°C</td>
+            <td>Nublado</td>
+            <td>Perfecto para visitar museos o descubrir la gastronomía galesa.</td>
+        </tr>
+        <tr>
+            <td>Miércoles</td>
+            <td>20°C</td>
+            <td>Lluvioso</td>
+            <td>Buen momento para probar un té galés acompañado de torta negra.</td>
+        </tr>
+        <tr>
+            <td>Jueves</td>
+            <td>18°C</td>
+            <td>Ventoso</td>
+            <td>Se recomienda ropa abrigada; excelente opción conocer el Museo Paleontológico.</td>
+        </tr>
+        <tr>
+            <td>Viernes</td>
+            <td>24°C</td>
+            <td>Soleado</td>
+            <td>Ideal para excursiones hacia la Península Valdés y ver fauna marina.</td>
+        </tr>
+        <tr>
+            <td>Sábado</td>
+            <td>27°C</td>
+            <td>Soleado</td>
+            <td>Día perfecto para actividades al aire libre y recorridos por la costanera.</td>
+        </tr>
+        <tr>
+            <td>Domingo</td>
+            <td>21°C</td>
+            <td>Parcialmente nublado</td>
+            <td>Ambiente tranquilo para caminar por plazas y disfrutar en familia.</td>
+        </tr>
+    </table>
+</section>
+     <section class="contacto">
+    <h2>📩 Formulario de contacto</h2>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+</body>
+</html>

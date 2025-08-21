@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Trelew</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-dymYXx3QWRiBdx6sH30vku+6ja4ZK20DfCsGM4I8VCF2YQDPIELWe53HV+5AUFTgoLXMPvMiZFX+ybCj49d1Bw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #2c3e50;
+      color: #ffffff;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #34495e;
+      color: #ffffff;
+      padding: 15px;
+      margin-right: 10px;
+      box-sizing: border-box;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-radius: 4px;
+    }
+    nav a i {
+      margin-right: 8px;
+    }
+    nav a:hover {
+      background-color: #3f5b76;
+    }
+    .contenedor-principal {
+      display: flex;
+      padding: 0 10px;
+    }
+    nav {
+      width: 20%;
+    }
+    main {
+      width: 80%;
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    input[type="submit"] {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <audio id="MusicaTipica" autoplay loop>
+    <source src="MusicaTipica.mp3" type="audio/mpeg">
+    Su navegador no soporta la reproducción de audio.
+  </audio>
+  <button onclick="document.getElementById('MusicaTipica').pause()">Detener música</button>
+  <button onclick="document.getElementById('MusicaTipica').play()">Continuar música</button>
+  <header>
+    <h1>Contacto</h1>
+  </header>
+  <div class="contenedor-principal">
+    <nav>
+      <ul>
+        <li><a href="Argentina.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="historia.html"><i class="fas fa-book"></i> Historia</a></li>
+        <li><a href="turismo.html"><i class="fas fa-plane"></i> Turismo</a></li>
+        <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Formulario de contacto</h2>
+      <p>Para ponerse en contacto con nosotros, por favor complete el siguiente formulario.</p>
+      <form>
+        <label>Nombre:<br>
+          <input type="text" name="nombre">
+        </label><br>
+        <label>Correo:<br>
+          <input type="email" name="correo">
+        </label><br>
+        <label>Mensaje:<br>
+          <textarea name="mensaje" rows="4" cols="30"></textarea>
+        </label><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </main>
+  </div>
+  <footer>
+    <p>Portal Trelew - 2025</p>
+  </footer>
+</body>
+</html>
