@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto Web — Cultura & Turismo</title>
+  <meta name="description" content="Sitio informativo sobre historia, turismo y cultura. Descubre lugares, gastronomía y contacto." />
+  <meta property="og:title" content="Proyecto Web — Cultura & Turismo" />
+  <meta property="og:description" content="Explora historia, turismo, gastronomía y cultura." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="imagen01.jpg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">★</span>
+        <span class="brand-text">Cultura & Turismo</span>
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+        <ul id="menu" class="menu">
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="turismo.html">Turismo</a></li>
+          <li><a href="Argentina.html">Argentina</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="hero" role="banner" aria-label="Portada">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Descubre la historia, cultura y sabores</h1>
+        <p>Una guía visual de lugares turísticos, gastronomía y tradiciones. Navega por las secciones y explora más.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="turismo.html">Explorar Turismo</a>
+          <a class="btn btn-outline" href="Argentina.html">Cultura & Gastronomía</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="AvenidaFontana02.jpeg" alt="Vista de la avenida principal" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+  <main id="contenido" class="container main">
+    <section class="cards" aria-label="Secciones destacadas">
+      <article class="card">
+        <img src="ImgHistoria01.jpg" alt="Imagen representativa de la historia" loading="lazy" />
+        <div class="card-body">
+          <h2>Historia</h2>
+          <p>Líneas de tiempo, personajes y momentos clave que marcaron identidad.</p>
+          <a class="btn btn-link" href="historia.html" aria-label="Ir a Historia">Ver sección →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="LugaresTuristicos.jpg" alt="Lugares turísticos" loading="lazy" />
+        <div class="card-body">
+          <h2>Turismo</h2>
+          <p>Rutas, paisajes y recomendaciones para una experiencia inolvidable.</p>
+          <a class="btn btn-link" href="turismo.html" aria-label="Ir a Turismo">Ver sección →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="ComidaTipica.jpg" alt="Gastronomía y cultura" loading="lazy" />
+        <div class="card-body">
+          <h2>Argentina</h2>
+          <p>Costumbres, música y sabores que reflejan tradición y diversidad.</p>
+          <a class="btn btn-link" href="Argentina.html" aria-label="Ir a Argentina">Ver sección →</a>
+        </div>
+      </article>
+    </section>
+    <section class="gallery" aria-label="Galería de imágenes">
+      <header class="section-head">
+        <h2>Galería</h2>
+        <p>Imágenes destacadas del proyecto.</p>
+      </header>
+      <div class="grid gallery-grid">
+        <figure class="gallery-item">
+          <img src="imagen01.jpg" alt="Postal turística 1" loading="lazy" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="imagen02.jpg" alt="Postal turística 2" loading="lazy" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="ComidaTipica.jpg" alt="Comida típica" loading="lazy" />
+        </figure>
+        <figure class="gallery-item">
+          <img src="LugaresTuristicos.jpg" alt="Lugar turístico" loading="lazy" />
+        </figure>
+      </div>
+    </section>
+    <section class="audio-block" aria-label="Música típica">
+      <div class="audio-inner">
+        <h2>Música Típica</h2>
+        <p>Disfruta de una breve muestra musical mientras navegas.</p>
+        <audio controls preload="none">
+          <source src="MusicaTipica.mp3" type="audio/mpeg" />
+          Tu navegador no soporta audio HTML5.
+        </audio>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="foot-col">
+        <h3>Cultura & Turismo</h3>
+        <p>Sitio educativo con fines de demostración.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Secciones</h4>
+        <ul class="foot-links">
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="turismo.html">Turismo</a></li>
+          <li><a href="Argentina.html">Argentina</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>Recursos</h4>
+        <ul class="foot-links">
+          <li><a href="https://github.com/Jhorsh-code/JhorshClinton.github.io">Repositorio</a></li>
+          <li><a href="#contenido">Volver arriba</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container foot-bottom">
+      <p>© 2025 · Proyecto Web — Hecho con HTML5 + CSS3</p>
+    </div>
+  </footer>
+
+  <script>
+
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('#menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('open');
+      });
+    }
+  </script>
+</body>
+</html>
